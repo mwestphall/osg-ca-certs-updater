@@ -30,7 +30,7 @@ install: manual
 	install -p -m 644 README.md $(DESTDIR)/$(DOCDIR)
 
 	mkdir -p $(DESTDIR)/$(SYSTEMDDIR)
-	install -p -m 644 $(NAME).timer $(NAME).service $(DESTDIR)/$(DOCDIR)
+	install -p -m 644 $(NAME).timer $(NAME).service $(DESTDIR)/$(SYSTEMDDIR)
 
 	mkdir -p $(DESTDIR)/$(MANDIR)
 	install -p -m 644 $(MANPAGE) $(DESTDIR)/$(MANDIR)
