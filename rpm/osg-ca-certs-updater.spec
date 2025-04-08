@@ -29,9 +29,6 @@ make install DESTDIR=%{buildroot} PYTHON=%{__python}
 mkdir -p %{buildroot}/%{_localstatedir}/{lock/subsys,lib}
 touch %{buildroot}/%{_localstatedir}/lib/%{name}-lastrun
 
-mkdir -p %{buildroot}/usr/lib/systemd/system
-mv osg-ca-certs-updater.service osg-ca-certs-updater.timer %{buildroot}/usr/lib/systemd/system
-
 %files
 %{_sbindir}/%{name}
 /usr/lib/systemd/system/osg-ca-certs-updater.*
